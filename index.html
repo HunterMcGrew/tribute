@@ -11,75 +11,65 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
-<!-- Used this so FireFox would display what I wanted -->    
-<!-- YouTube API Script Start-->
-    <script>
-        // Load the IFrame Player API code asynchronously.
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/player_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-      
-        // Replace the 'ytplayer' element with an <iframe> and
-        // YouTube player after the API code downloads.
-        var player;
-        function onYouTubePlayerAPIReady() {
-          player = new YT.Player('ytplayer', {
-            height: '360',
-            width: '640',
-            videoId: '_PEe6TP1kCc'
-          });
-        }
-      </script>
-<!-- YouTube API Script End-->
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-<h1>Skrillex Tribute Page!</h1>
+
+<h1 id="head">Skrillex Tribute Page!</h1>
 <p>
 <a href="https://www.skrillex.com/" target="_blank">
     <img 
-    src="images/skrillex_logo2_resize.jpg" 
+    id="header-image"
+    src="images/skrillex_logo2.jpg" 
     alt="Skrillex Official Site">
 </a>
 </p>
-<p>
-    <h2>About Skrillex</h2>
-</p>
 <!-- Start of Bio-->
-<p> 
-    Skrillex is an American DJ and musician. Before taking on the stage name "Skrillex" he simply went by "Sonny". Skrillex's real name is Sonny Moore.
-</p>
-<p>
-    Before becoming a solo artist Sonny was in a post-hardcore band "From First to Last" as the lead singer from 2004-2007. During this time he was in the band they recorded two studio albums before leaving to pursue a solo career.
-</p>
-<p>
-    In 2009, he released the Gypsyhook EP. He was also suppose to record his debut studio ablum named "Bells". Instead, he stopped production of the album and began performing under the name Skrillex. Releasing a free EP "My Name Is Skrillex". 
-</p>
-<p>
-    Skrillex's career was really kicked off by the "Scary Monsters and Nice Sprites" EP in late 2010 and the "More Monsters and Sprites" EP mid 2011. In 2011, out of five nomination at the 54th Grammy Awards, he took home three. Over his career so far Skrillex has won eight Grammy awards. Making him the dance music artist with the most awards at this time.
-</p>
-<p>
-<h2>Favorite Song:</h2>
-<p>Butterflies</p>
-<p>
+<div id="bio">
+    <p>
+        <h2>About Skrillex</h2>
+    </p>
 
-<iframe
+    <p> 
+    Skrillex is an American DJ and musician. Before taking on the stage name "Skrillex" he simply went by "Sonny". Skrillex's real name is Sonny Moore.
+    </p>
+    <p>
+    Before becoming a solo artist Sonny was in a post-hardcore band "From First to Last" as the lead singer from 2004-2007. During this time he was in the band they recorded two studio albums before leaving to pursue a solo career.
+    </p>
+    <p>
+    In 2009, he released the Gypsyhook EP. He was also suppose to record his debut studio ablum named "Bells". Instead, he stopped production of the album and began performing under the name Skrillex. Releasing a free EP "My Name Is Skrillex". 
+    </p>
+    <p>
+    Skrillex's career was really kicked off by the "Scary Monsters and Nice Sprites" EP in late 2010 and the "More Monsters and Sprites" EP mid 2011. In 2011, out of five nomination at the 54th Grammy Awards, he took home three. Over his career so far Skrillex has won eight Grammy awards. Making him the dance music artist with the most awards at this time.
+    </p>
+
+</div>
+<!-- End of Bio -->
+
+<div id="fav-song">
+    <p>
+        <h2>Favorite Song:</h2>
+    <p>Butterflies</p>
+    </p>
+</div>
+
+<!-- YouTube Player -->
+<div id="video">
+
+    <iframe
     id="player"
     type="text/html"
-    width="640"
-    height="360"
+    width="640p"
+    height="360p"
     src="https://www.youtube.com/embed/_PEe6TP1kCc"
     frameborder="0">
-</iframe>
+    </iframe>
 
+</div>
+<!-- End YouTube Player -->
 
-<!-- Used this so FireFox would display what I wanted. Might just be because I'm viewing the site locally. -->
-<!-- it was just because i was hosting the site locally, went back to using plain iframe -->
-<!-- <div id="ytplayer"></div> -->
-</p>
-</p>
 
 </body>
 
